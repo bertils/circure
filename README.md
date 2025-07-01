@@ -36,6 +36,8 @@ The `{output}` argument must be given as a full file path. All dependencies requ
 
 The script will write the results as a tab-separated file.
 
+### [Output explanation]
+
 <!-- 
 - **contig**: contig/seqeunce
 - **file**: filename.
