@@ -1,4 +1,4 @@
-# 🌀 circure
+# Introduction
 
 **circure** is a script for validating the circularity of long-read assembled sequences.
 
@@ -9,7 +9,7 @@ Circularity is inferred by mapping (primary) long-reads back to the assembly wit
 
 ### [More explanation in  section ***to be added***]
 
-# 🚀 Usage
+# Usage
 **circure** accepts a subset of the [PAF format](https://github.com/lh3/minimap2/blob/master/PAF.md) as input, which must be generated using [minimap2](https://github.com/lh3/minimap2). It is recommended to use accurate (Q20+) long reads, in which case the `-x lr:hq` preset is advised to use. 
 
 
