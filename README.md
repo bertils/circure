@@ -31,7 +31,7 @@ Finally, execute the **circure** script:
 ```bash
 Rscript running_circure.R {input} {output}
 ```
-The `{output}` argument must be given as a full file path. All dependencies required to run the circure script are listed in the circure.yml Conda environment file.
+The `{output}` argument must be given as a file. All dependencies required to run the circure script are listed in the circure.yml Conda environment file.
 
 
 The script will write the results as a tab-separated file.
