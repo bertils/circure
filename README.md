@@ -23,7 +23,7 @@ Using the `--secondary=no` flag ensures that minimap2 only reports **primary ali
 
 Next, generate the input file for the **circure** script by extracting a subset of the PAF output from minimap2 with ```awk```:
 ```bash
-awk 'OFS="\\t" {{print $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11}}' {input} > {output}
+awk 'BEGIN { FS="\t"; OFS="\t" } { print $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11 }’ {input} > {output}
 ```
 The tab-separated PAF input file must retain the `.paf` extension.
 \
