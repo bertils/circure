@@ -52,7 +52,7 @@ Results are output as a tab-separated file. Example output from running **circur
 - **reads_longer_than_contig_no_ab_split**: number of unsplit reads that map from the first to the last base of the contig with ≥95% identity and extend >1% of the contig length over its ends. This column is intended a "caution flag". Reads from a circular element are expected to be split, so unsplit reads mapping over the entirety of the contig may indicate multimers or chromosomal integration. Since there is also support for circularity it might also indicate that more forms of this circular element exist. 
 - **reads_overhanging**: number of reads that map to only one end of the contig with ≥95% identity and extend >1% of the contig length over that end. This column is intended as a "caution flag". Unlike reads mapping over the artificial breakpoint, these reads do not continue onto the other end of the contig, which may indicate that the sequence continues elsewhere, e.g. in the chromosome.
 
-All reads must be ≥1,001 bp and align with ≥95% identity. Only reads mapping over the artificial breakpoint and the chaining are used for the prediction. The settings can be changed at the top of `running_circure.R`.
+All reads must be ≥1,001 bp and align with ≥95% identity over 99% of their length to the contig. Only reads mapping over the artificial breakpoint and the chaining are used for the validation. The settings can be changed at the top of `running_circure.R`.
 <!-- 
 - **contig**: contig/seqeunce
 - **file**: filename.
