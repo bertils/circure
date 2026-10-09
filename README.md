@@ -36,7 +36,7 @@ Rscript running_circure.R {input} {output}
 The `{output}` argument must be given as a file. All dependencies required to run the **circure** script are listed in the circure.yml Conda environment file.
 
 
-Results are output as a tab-separated file
+Results are output as a tab-separated file (examplified underneath from the zymoHMW run):
 
 ### [Output explanation]
 
