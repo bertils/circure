@@ -12,7 +12,9 @@ Circularity is inferred by mapping (primary) long-reads back to the assembly wit
 **circure** accepts a subset of the [PAF format](https://github.com/lh3/minimap2/blob/master/PAF.md) as input, which must be generated using [minimap2](https://github.com/lh3/minimap2). **circure** accepts a subset of the PAF format as input, which must be generated using minimap2. If using accurate long reads (Q20+), it is advised to use the `-x lr:hq` preset.
 
 
-
+### Example dataset
+The example dataset (`PAS01578.dorado2.0.0.bmdna_r10.4.1_e8.2_400bps_6.0.0_hac.sim-200000.fastq.gz`) is a subsample of 200,000 Oxford Nanopore reads from the [ZymoBIOMICS HMW DNA Standard](https://zymoresearch.eu/products/zymobiomics-hmw-dna-standard), obtained from [MicroBench](https://github.com/Kirk3gaard/MicroBench) (ENA project [PRJEB85558](https://www.ebi.ac.uk/ena/browser/view/PRJEB85558)). The .fastq can be downloaded from https://zenodo.org/uploads/22944851. 
+The sample contains four plasmids, one *Escherichia coli* plasmid (110,007 bp) and three *Staphylococcus aureus* plasmids (6,337 bp, 2,993 bp and 2,216 bp), which are provided in `zymohmw_plasmids.fasta`. 
 
 ### Example command:
 ```bash
